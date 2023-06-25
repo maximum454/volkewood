@@ -1,0 +1,27 @@
+.pagination{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 110px;
+    &__item{
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid #777777;
+        color: #777777;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 5px;
+        &.active{
+            background-color: #956B41;
+            border-color: #956B41;
+            color: var(--white-text);
+        }
+    }
+    .icon-arrow-right{
+        margin: 0 auto;
+        width: 10px;
+    }
+}

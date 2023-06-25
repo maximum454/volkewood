@@ -29,4 +29,9 @@
     &__anons{
         @include truncate-text(1);
     }
+    &__price{
+        color: var(--color-head);
+        font-size: 13px;
+        font-weight: bold;
+    }
 }
