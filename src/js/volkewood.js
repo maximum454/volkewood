@@ -3,23 +3,23 @@
 @@include('./partials/jquery.mask.js')
 
 
-if(document.querySelector('.swiper-brands')) {
-    const swiperBrands = new Swiper('.swiper-brands', {
-        slidesPerView: 7.8,
+if(document.querySelector('.swiper-products')){
+    const swiperProducts = new Swiper('.swiper-products', {
+        slidesPerView: 5,
         centeredSlides: true,
-        loop: true,
-        spaceBetween: 53,
+        centeredSlidesBounds: true,
+        spaceBetween: 40,
         breakpoints: {
             320: {
-                slidesPerView: 4,
-                spaceBetween: 35
+                slidesPerView: 1,
+                spaceBetween: 20
             },
             768: {
-                slidesPerView: 4.3,
-                spaceBetween: 53
+                slidesPerView: 3,
             },
             1024: {
-                slidesPerView: 7.8,
+                slidesPerView: 5,
+                spaceBetween: 40,
             }
         }
     })

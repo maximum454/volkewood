@@ -4,8 +4,8 @@
 	white-space: nowrap;
 	vertical-align: middle;
 	font-weight: 400;
-	font-size: 13px;
-	line-height: 13px;
+	font-size: 16px;
+	line-height: 16px;
 	user-select: none;
 	border: 1px solid transparent;
 	padding: 20px 30px;
@@ -32,13 +32,13 @@
 		}
 	}
 	&.btn-secondary{
-		color: #fff;
-		background-color: #FF0000;
-		border-color: #FF0000;
+		color: #666666;
+		background-color: #FFFFFF;
+		border-color: #FFFFFF;
 		&:hover {
-			color: #fff;
-			background-color: #192864;
-			border-color: #192864;
+			color: #666666;
+			background-color: rgba(#ffffff,.8);
+			border-color: #FFFFFF;
 		}
 	}
 	&.btn-success{
@@ -133,14 +133,14 @@
 	}
 
 	&.btn-outline-primary{
-		color: #000000;
+		color: var(--white);
 		background-color: transparent;
 		background-image: none;
-		border-color: #000000;
+		border-color: var(--white);
 		&:hover {
-			color: #fff;
-			background-color: #192864;
-			border-color: #192864;
+			color: var(--color-head);
+			background-color: var(--white);
+			border-color: var(--white);
 		}
 	}
 	&.btn-outline-secondary{

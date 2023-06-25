@@ -14,7 +14,14 @@
 @import "tabs";
 
 
-
+:root{
+	--bg: #E7E6E4;
+	--color-head: #555555;
+	--color-text: #777777;
+	--white: #ffffff;
+	--black: #000000;
+	--link-active: #956B41;
+}
 * {
 	box-sizing: border-box;
 }
@@ -22,8 +29,8 @@ html{
 	/*scroll-behavior: smooth;*/
 }
 body{
-	background-color: #fff;
-	font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--bg);
+	font-family: 'Montserrat', sans-serif;
 	&.lock{
 		overflow: hidden;
 	}
@@ -33,7 +40,7 @@ a{
 	transition: all .3s ease;
 	&:hover{
 		transition: all .3s ease;
-		color: #ff0000;
+		color: var(--link-active);
 	}
 }
 .wrp {
@@ -181,6 +188,10 @@ a{
 
 
 @import "componets/header";
+@import "componets/hero";
+@import "componets/slider-products";
+@import "componets/product-item";
+@import "componets/banner";
 
 
 

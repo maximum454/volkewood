@@ -80,6 +80,15 @@ $maxWidth: 1200;
 	padding-bottom: $height;
 }
 
+/*Обрезка строк многоточие*/
+@mixin truncate-text($line) {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: $line;
+	-webkit-box-orient: vertical;
+}
+
+
 
 @function max($numbers...) {
 	@return m#{a}x(#{$numbers});
