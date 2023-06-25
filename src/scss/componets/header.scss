@@ -1,0 +1,26 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    &__body{
+        text-align: center;
+        position: relative;
+    }
+    &__menu{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0,-50%);
+        background-color: transparent;
+        border: none;
+        background-image: url("../img/menu.svg");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 33px;
+        height: 33px;
+        cursor: pointer;
+    }
+}

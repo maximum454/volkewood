@@ -21,6 +21,8 @@
 	--white: #ffffff;
 	--black: #000000;
 	--link-active: #956B41;
+	--footer-bg: #282828;
+	--white-text: #ffffff;
 }
 * {
 	box-sizing: border-box;
@@ -188,6 +190,7 @@ a{
 
 
 @import "componets/header";
+@import "componets/footer";
 @import "componets/hero";
 @import "componets/slider-products";
 @import "componets/product-item";

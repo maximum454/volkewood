@@ -15,12 +15,13 @@
         font-size: 27px;
         line-height: 44px;
         font-weight: bold;
+        margin: 0;
     }
     &__subtitle{
         color: #777777;
         font-size: 17px;
         line-height: 32px;
-        margin-top: 20px;
+        margin: 20px auto 0;
     }
     &__body{
         text-align: center;

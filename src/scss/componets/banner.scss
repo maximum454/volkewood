@@ -9,6 +9,7 @@
     width: 100vw;
     left: 50%;
     transform: translate(-50%,0);
+    padding: 20px;
     &__bg{
         position: absolute;
         top: 0;
@@ -41,7 +42,7 @@
     }
     &__title{
         font-size: 30px;
-        line-height: 30px;
+        line-height: 50px;
         margin: 0 auto 20px;
     }
     &__subtitle{
