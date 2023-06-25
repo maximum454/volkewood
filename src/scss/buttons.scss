@@ -144,14 +144,14 @@
 		}
 	}
 	&.btn-outline-secondary{
-		color: #000;
+		color: #777;
 		background-color: transparent;
 		background-image: none;
-		border-color: #000;
+		border-color: #777;
 		&:hover {
-			color: #fff;
-			background-color: #FF0000;
-			border-color: #FF0000;
+			color: #777;
+			background-color: var(--white);
+			border-color: var(--white);
 		}
 	}
 	&.btn-outline-success{
