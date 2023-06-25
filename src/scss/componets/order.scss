@@ -1,0 +1,123 @@
+.order{
+    max-width: 793px;
+    &__header{
+        margin-bottom: 20px;
+        .order__title{
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 29px;
+            color: #000000;
+            margin: 0;
+        }
+    }
+    &__item{
+        background-color: #FAFAFA;
+        padding:16px 20px 28px;
+        margin-bottom: 10px;
+    }
+    &__title{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: #000000;
+        margin: 0 0 20px;
+    }
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__add{
+        width: 263px;
+        padding: 18px 15px;
+        .icon{
+            width: 16px;
+            height: 16px;
+            vertical-align: bottom;
+        }
+    }
+    .form-control{
+        padding: 18px 15px;
+        background-color: transparent;
+    }
+    textarea.form-control{
+        max-height: 159px;
+    }
+    .custom-radio{
+        &--order{
+            border: 1px solid #000000;
+            padding:16px 20px 20px;
+            height: 104px;
+            flex: 1 0 calc(50% - 20px);
+            max-width: 50%;
+            position: relative;
+            cursor: pointer;
+            span{
+                position: relative;
+            }
+            .custom-radio__icon{
+                position: absolute;
+                top: 16px;
+                right: 20px;
+                background-color: #FFFFFF;
+                width: 43px;
+                height: 43px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .icon{
+                    margin: auto;
+                }
+            }
+            .custom-radio__name{
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 27px;
+                color: #000000;
+                position: absolute;
+                bottom: 13px;
+
+            }
+        }
+    }
+    .jq-selectbox{
+        border: 1px solid;
+        &__select{
+            padding: 0 23px 0 15px;
+            height: 53px;
+        }
+        &__select-text{
+            line-height: 53px;
+        }
+        &__trigger{
+            right: 15px;
+        }
+    }
+    @include r(1023){
+        &__title{
+            margin: 0 0 10px;
+        }
+    }
+    @include r(767){
+        &__item{
+            padding:13px 16px 26px;
+        }
+        &__title{
+            font-size: 16px;
+            line-height: 29px;
+            margin: 0 0 12px;
+        }
+        .custom-radio{
+            &--order{
+                padding:16px 20px 20px;
+                flex: 1 0 100%;
+                max-width: 100%;
+            }
+        }
+        .btn{
+            width: 100%;
+        }
+    }
+}

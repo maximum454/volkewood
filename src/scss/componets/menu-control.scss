@@ -1,0 +1,75 @@
+.menu-control{
+  display: flex;
+  &__item{
+    text-align: center;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 30px;
+    &:last-of-type{
+      margin-right: 0;
+    }
+    &:hover{
+      .menu-control__name{
+        color: #ff0000;
+        transition: all .3s ease;
+      }
+      .icon{
+        transition: all .3s ease;
+      }
+      .icon-login{
+        background-image: url("../img/icons-sprite.svg#login-red");
+      }
+      .icon-basket{
+        background-image: url("../img/icons-sprite.svg#basket-red");
+      }
+      .icon-favorites{
+        background-image: url("../img/icons-sprite.svg#favorites-red");
+      }
+      .icon-estimate{
+        background-image: url("../img/icons-sprite.svg#estimate-red");
+      }
+      .icon-compare{
+        background-image: url("../img/icons-sprite.svg#compare-red");
+      }
+    }
+    .icon{
+      margin: 0 auto 7px;
+      transition: all .3s ease;
+    }
+
+  }
+  &__name{
+    display: block;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+    transition: all .3s ease;
+  }
+  &__icon{
+    position: relative;
+  }
+  .icon{
+    position: relative;
+  }
+  &__count{
+    position: absolute;
+    top: -3px;
+    right: -6px;
+    z-index: 10;
+    background-color: #FF0000;
+    border: 1px solid #FFFFFF;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 18px;
+    height: 18px;
+    margin-left: 5px;
+    padding: 0 5px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    font-style: normal;
+  }
+}
