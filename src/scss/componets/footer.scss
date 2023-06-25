@@ -6,6 +6,7 @@
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
+        align-items: flex-start;
     }
     &__logos{
         display: flex;
@@ -27,7 +28,7 @@
         }
     }
     &__item{
-        flex: 1 0 270px;
+        flex: 1 0 180px;
         max-width: 270px;
     }
     &__title{
@@ -45,5 +46,15 @@
         color: var(--white-text);
         font-size: 15px;
         line-height: 25px;
+    }
+    @include r(1023){
+        &__logos{
+            gap: 15px;
+            margin-right: 60px;
+        }
+        &__item{
+            flex: 1 0 130px;
+            max-width: 180px;
+        }
     }
 }

@@ -52,4 +52,16 @@
         position: relative;
         z-index: 10;
     }
+    @include r(1023){
+        height: 100vh;
+        &__title{
+            font-size: 36px;
+            line-height: 46px;
+        }
+        &__btns{
+            .btn{
+                max-width: 200px;
+            }
+        }
+    }
 }
