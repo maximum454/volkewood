@@ -3,9 +3,9 @@
     width: 100vw;
     left: 50%;
     transform: translate(-50%,0);
-    height: 770px;
+    min-height: 350px;
+    max-height: 770px;
     text-align: center;
-    padding: 40px 20px;
     display: flex;
     align-items: flex-end;
     &__title{
@@ -24,11 +24,7 @@
         }
     }
     &__bg{
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
+        position: relative;
         width: 100%;
         height: 100%;
         &:after{
@@ -47,10 +43,13 @@
         }
     }
     &__content{
+        padding: 40px 20px 60px;
         max-width: 945px;
-        margin: 0 auto 40px;
-        position: relative;
+        margin: 0 auto;
         z-index: 10;
+        position: absolute;
+        left: 0;
+        right: 0;
     }
     @include r(1023){
         height: 100vh;

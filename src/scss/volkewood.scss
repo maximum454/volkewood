@@ -209,6 +209,12 @@ a{
 	}
 }
 
+p{
+	font-size: 13px;
+	line-height: 25px;
+	color: var(--color-text);
+}
+
 
 @import "componets/header";
 @import "componets/footer";
@@ -218,6 +224,7 @@ a{
 @import "componets/banner";
 @import "componets/collection";
 @import "componets/nav";
+@import "componets/collection-section";
 
 
 
