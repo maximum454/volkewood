@@ -4,6 +4,18 @@
     left: 0;
     z-index: 10;
     width: 100%;
+    &.scroll{
+        background-color: var(--black);
+        height: 55px;
+        .header__logo{
+            display: inline-block;
+            height: 55px;
+            img{
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
     &__body{
         text-align: center;
         position: relative;
@@ -22,5 +34,8 @@
         width: 33px;
         height: 33px;
         cursor: pointer;
+    }
+    &__logo{
+        display: inline-block;
     }
 }

@@ -23,12 +23,12 @@
 	}
 	&.btn-primary{
 		color: #fff;
-		background-color: #192864;
-		border-color: #192864;
+		background-color: #d26e4b;
+		border-color: #d26e4b;
 		&:hover {
 			color: #fff;
-			background-color: #FF0000;
-			border-color: #FF0000;
+			background-color: rgba(#d26e4b,.8);
+			border-color: rgba(#d26e4b,.8);
 		}
 	}
 	&.btn-secondary{

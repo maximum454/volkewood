@@ -63,7 +63,11 @@ function browserSync(params) {
 
 function html() {
     return src(path.src.html)
-        .pipe(fileinclude())
+        .pipe(fileinclude({
+            context: {
+                name: 'scroll'
+            }
+        }))
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream())
 }

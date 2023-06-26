@@ -1,5 +1,5 @@
 .detail{
-    margin-top: 125px;
+    margin-top: 100px;
     margin-bottom: 125px;
     &__body{
         display: flex;
@@ -18,12 +18,31 @@
     &__content{
         flex: 1;
     }
+    &__share{
+        margin-top: 20px;
+        padding: 10px 0;
+        border-top: 1px solid #777777;
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+    }
+
     .slider-thumbs{
         margin-top: 15px;
     }
     .tabs{
         &__content{
             background-color: transparent;
+            ul{
+                margin: 0 0 20px;
+                padding-left: 20px;
+                li{
+                    font-size: 13px;
+                    line-height: 25px;
+                    color: #777;
+                }
+            }
         }
     }
 }

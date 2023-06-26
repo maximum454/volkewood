@@ -1744,14 +1744,14 @@ html.remodal-is-locked {
 
 .btn.btn-primary {
   color: #fff;
-  background-color: #192864;
-  border-color: #192864;
+  background-color: #d26e4b;
+  border-color: #d26e4b;
 }
 
 .btn.btn-primary:hover {
   color: #fff;
-  background-color: #FF0000;
-  border-color: #FF0000;
+  background-color: rgba(210, 110, 75, 0.8);
+  border-color: rgba(210, 110, 75, 0.8);
 }
 
 .btn.btn-secondary {
@@ -3032,7 +3032,7 @@ html {
 }
 
 body {
-  background-color: var(--bg);
+  background-color: var(--white);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -3222,6 +3222,21 @@ p {
   width: 100%;
 }
 
+.header.scroll {
+  background-color: var(--black);
+  height: 55px;
+}
+
+.header.scroll .header__logo {
+  display: inline-block;
+  height: 55px;
+}
+
+.header.scroll .header__logo img {
+  height: 100%;
+  width: auto;
+}
+
 .header__body {
   text-align: center;
   position: relative;
@@ -3243,6 +3258,10 @@ p {
   width: 33px;
   height: 33px;
   cursor: pointer;
+}
+
+.header__logo {
+  display: inline-block;
 }
 
 .footer {
@@ -3403,6 +3422,7 @@ p {
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   overflow: hidden;
+  background-color: #E7E6E4;
 }
 
 .slider-products__header {
@@ -3874,7 +3894,7 @@ p {
 }
 
 .detail {
-  margin-top: 125px;
+  margin-top: 100px;
   margin-bottom: 125px;
 }
 
@@ -3907,12 +3927,34 @@ p {
           flex: 1;
 }
 
+.detail__share {
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #777777;
+}
+
+.detail__share ul {
+  padding: 0;
+  margin: 0;
+}
+
 .detail .slider-thumbs {
   margin-top: 15px;
 }
 
 .detail .tabs__content {
   background-color: transparent;
+}
+
+.detail .tabs__content ul {
+  margin: 0 0 20px;
+  padding-left: 20px;
+}
+
+.detail .tabs__content ul li {
+  font-size: 13px;
+  line-height: 25px;
+  color: #777;
 }
 
 @media only screen and (min-width: 641px) {
