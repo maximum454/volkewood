@@ -1426,6 +1426,36 @@ if(document.querySelector('.swiper-products')){
         }
     })
 }
+
+
+if(document.querySelector('.detail__slider')){
+    const swiperThumbs = new Swiper(".slider-thumbs", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        observer: true,
+        slideToClickedSlide: true,
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true,
+        watchOverflow:true,
+        virtualTranslate: true,
+    });
+    const swiperMain = new Swiper(".slider-main", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        watchOverflow: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        preventInteractionOnTransition: true,
+        initialSlide: 0,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        observer: true,
+        thumbs: {
+            swiper: swiperThumbs
+        },
+    });
+}
+
 function getDirection() {
     let windowWidth = window.innerWidth;
     let direction = window.innerWidth <= 1023 ? 'horizontal' : 'vertical';

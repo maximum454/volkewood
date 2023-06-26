@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    @@include('./template/_meta.html',{
+    "title": "volkewood",
+    "description": "volkewood - Europa", })
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/volkewood.css">
+</head>
+
+<body>
+<div class="wrp">
+    <div id="to-top" class="to-top"></div>
+    <div class="wrp__overlay"></div>
+    @@include('./template/_header.html')
+    <main>
+        <div class="container">
+            <div class="detail">
+                <div class="detail__body">
+                    <div class="detail__slider">
+                        <div class="slider-main">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="https://placehold.co/700x456" width="700" height="456" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="https://placehold.co/700x456" width="700" height="456" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-thumbs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="https://placehold.co/160x155" width="160" height="155" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="https://placehold.co/160x155" width="160" height="155" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail__content">
+                        <h1>Blanc De Chaux</h1>
+                        <div class="tabs">
+                            <ul class="tabs__caption">
+                                <li class="active">Description</li>
+                                <li>Technical</li>
+                                <li>Specification</li>
+                            </ul>
+
+                            <div class="tabs__content active">
+                                <div>About uv poly finished hardwoods</div>
+                                <p>The French Oak Collection comprises of solid and engineered hardwood floors, all hand-
+                                    finished by skilled artisans. We offer a wide range of plank wood with custom sizes, colors,
+                                    and textures that create our coveted collection. The unique character of each plank is achieved
+                                    by implementing a variety of techniques to obtain particular textures and patinas. This wood
+                                    has been lightly fumed for a distinct and sophisticated look with its depth of color and tone.</p>
+                            </div>
+                            <div class="tabs__content">
+                                <ul>
+                                    <li>Surface Texture: Lightly Brushed</li>
+                                    <li>Open Grains: Yes</li>
+                                    <li>Knots: Yes</li>
+                                    <li>Knots Size: Small to Large</li>
+                                    <li>Open Knots: Filled</li>
+                                    <li>Color Range/Variation: Low/Medium</li>
+                                    <li>Made to Look Reclaimed: No</li>
+                                    <li>Tumbled: No</li>
+                                    <li>Edge Profile: Smooth, Eased</li>
+                                    <li>Prefinished Color From Poly: Yes</li>
+                                    <li>Prefinished Color From Fumed**: Yes</li>
+                                    <li>Can Wood Be Stained After Installation: No</li>
+                                    <li>Can Wood Be Resanded: Yes 2-3 times</li>
+                                </ul>
+                            </div>
+                            <div class="tabs__content">
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="#" class="btn btn-primary">Request a Sample</a>
+                            <a href="#" class="btn btn-primary">Download PDF</a>
+                        </div>
+                        <div class="detail__share">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('./template/_footer.html')
+    @@include('./template/_modal.html')
+</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/volkewood.js"></script>
+
+</body>
+
+</html>

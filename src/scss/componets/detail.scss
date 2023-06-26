@@ -1,0 +1,29 @@
+.detail{
+    margin-top: 125px;
+    margin-bottom: 125px;
+    &__body{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    &__slider{
+        overflow: hidden;
+        flex: 1 0 700px;
+        max-width: 700px;
+        img{
+            display: block;
+            object-fit: cover;
+        }
+    }
+    &__content{
+        flex: 1;
+    }
+    .slider-thumbs{
+        margin-top: 15px;
+    }
+    .tabs{
+        &__content{
+            background-color: transparent;
+        }
+    }
+}
