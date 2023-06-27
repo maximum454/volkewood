@@ -20,13 +20,13 @@
     @include r(1023){
         &__item{
             flex: 1 0 calc(33.3% - 20px);
-            max-width: calc(33.3% - 20px);
+            max-width: 33.3%;
         }
     }
-    @include r(1023){
+    @include r(767){
         &__item{
             flex: 1 0 calc(50% - 20px);
-            max-width: calc(50% - 20px);
+            max-width: 50%;
         }
     }
 }

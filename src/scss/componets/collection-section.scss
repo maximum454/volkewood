@@ -51,6 +51,35 @@
     }
     &__figure{
         flex: 1;
+        img{
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+    }
+
+    @include r(1023){
+        &__item{
+            margin-bottom: 25px;
+        }
+        &__content{
+            flex: 1 0 280px;
+            max-width: 280px;
+            padding: 20px;
+        }
+    }
+    @include r(767){
+        &__item{
+            flex-wrap: wrap;
+        }
+        &__content{
+            flex: 1 0 100%;
+            max-width: 100%;
+            padding: 20px;
+        }
+        &__figure{
+            flex: 1 0 100%;
+        }
     }
 
 }
