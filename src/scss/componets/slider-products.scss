@@ -27,4 +27,7 @@
     &__body{
         text-align: center;
     }
+    @include r(767){
+        padding: 40px 20px;
+    }
 }

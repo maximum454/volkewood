@@ -98,10 +98,6 @@ a{
 	margin-right: auto;
 	padding-left: 20px;
 	padding-right: 20px;
-	@include r(1023){
-		padding-left: 30px;
-		padding-right: 30px;
-	}
 	@include r(767){
 		padding-left: 15px;
 		padding-right: 15px;
