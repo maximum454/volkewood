@@ -3241,6 +3241,24 @@ p {
   width: auto;
 }
 
+.header.inner {
+  background-color: var(--black);
+  height: 55px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header.inner .header__logo {
+  display: inline-block;
+  height: 55px;
+}
+
+.header.inner .header__logo img {
+  height: 100%;
+  width: auto;
+}
+
 .header__body {
   text-align: center;
   position: relative;
@@ -3853,7 +3871,7 @@ p {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 calc(33.3% - 20px);
           flex: 1 0 calc(33.3% - 20px);
-  max-width: calc(33.3% - 20px);
+  max-width: 33.3%;
   margin: 0;
 }
 
@@ -3945,9 +3963,9 @@ p {
 .detail__slider {
   overflow: hidden;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 700px;
-          flex: 1 0 700px;
-  max-width: 700px;
+      -ms-flex: 1 0 calc(55% - 20px);
+          flex: 1 0 calc(55% - 20px);
+  max-width: 55%;
 }
 
 .detail__slider img {
@@ -3958,8 +3976,9 @@ p {
 
 .detail__content {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+      -ms-flex: 1 0 calc(40% - 20px);
+          flex: 1 0 calc(40% - 20px);
+  max-width: 45%;
 }
 
 .detail__share {
@@ -3975,6 +3994,10 @@ p {
 
 .detail .slider-thumbs {
   margin-top: 15px;
+}
+
+.detail .tabs {
+  margin-bottom: 30px;
 }
 
 .detail .tabs__content {
@@ -4045,6 +4068,20 @@ p {
         -ms-flex: 1 0 calc(33.3% - 20px);
             flex: 1 0 calc(33.3% - 20px);
     max-width: 33.3%;
+  }
+
+  .detail__btns .btn {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .detail .tabs {
+    margin-bottom: 20px;
+  }
+
+  .detail .tabs__content {
+    margin-bottom: 0;
   }
 }
 
@@ -4186,10 +4223,37 @@ p {
             flex: 1 0 100%;
   }
 
+  .catalog-section .product-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 calc(50% - 20px);
+            flex: 1 0 calc(50% - 20px);
+    max-width: 50%;
+    margin: 0;
+  }
+
   .gallery__item {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 calc(50% - 20px);
             flex: 1 0 calc(50% - 20px);
     max-width: 50%;
+  }
+
+  .detail__slider {
+    overflow: hidden;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  .detail__content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  .detail .slider-thumbs {
+    display: none;
   }
 }

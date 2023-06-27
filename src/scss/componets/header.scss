@@ -18,6 +18,19 @@
             }
         }
     }
+    &.inner{
+        background-color: var(--black);
+        height: 55px;
+        transition: all .3s ease;
+        .header__logo{
+            display: inline-block;
+            height: 55px;
+            img{
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
     &__body{
         text-align: center;
         position: relative;
