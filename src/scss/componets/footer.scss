@@ -1,6 +1,8 @@
 .footer{
     background-color: var(--footer-bg);
     padding: 70px 0 20px;
+    margin-top: auto;
+    margin-bottom: 0;
     &__body{
         max-width: 1200px;
         margin: 0 auto;
