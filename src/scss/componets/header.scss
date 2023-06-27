@@ -7,6 +7,8 @@
     &.scroll{
         background-color: var(--black);
         height: 55px;
+        position: fixed;
+        transition: all .3s ease;
         .header__logo{
             display: inline-block;
             height: 55px;
@@ -37,5 +39,20 @@
     }
     &__logo{
         display: inline-block;
+    }
+    &__search{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0,-50%);
+        background-color: transparent;
+        border: none;
+        background-image: url("../img/search.svg");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 33px;
+        height: 33px;
+        cursor: pointer;
     }
 }

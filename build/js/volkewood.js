@@ -1485,10 +1485,12 @@ $(function (){
     });
 
     $(window).scroll(function() {
-        if($(this).scrollTop() != 0) {
+        if($(this).scrollTop() >= 300) {
             $('#to-top').fadeIn();
+            $(".header").addClass('scroll')
         } else {
             $('#to-top').fadeOut();
+            $(".header").removeClass('scroll')
         }
     });
 

@@ -3225,6 +3225,10 @@ p {
 .header.scroll {
   background-color: var(--black);
   height: 55px;
+  position: fixed;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .header.scroll .header__logo {
@@ -3262,6 +3266,24 @@ p {
 
 .header__logo {
   display: inline-block;
+}
+
+.header__search {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/search.svg");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 33px;
+  height: 33px;
+  cursor: pointer;
 }
 
 .footer {
