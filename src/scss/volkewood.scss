@@ -31,7 +31,7 @@ html{
 	/*scroll-behavior: smooth;*/
 }
 body{
-	background-color: var(--white);
+	background-color: #e7e6e4;
 	font-family: 'Montserrat', sans-serif;
 	&.lock{
 		overflow: hidden;
@@ -61,6 +61,37 @@ a{
 		&.active{
 			display: block;
 		}
+	}
+	&.detail-page{
+		.header{
+			background-color: var(--black);
+			height: 55px;
+			transition: all .3s ease;
+			.header__logo{
+				display: inline-block;
+				height: 55px;
+				img{
+					height: 100%;
+					width: auto;
+				}
+			}
+		}
+		.hero{
+			display: none;
+		}
+	}
+	&.bg-white{
+		background-color: var(--white);
+	}
+}
+.single-page{
+	background-color: #ffffff;
+	padding: 20px;
+	margin-top: 130px;
+	margin-bottom: 130px;
+	p{
+		font-size: 20px;
+		line-height: 30px;
 	}
 }
 

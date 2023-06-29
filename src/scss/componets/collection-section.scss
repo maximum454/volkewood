@@ -20,6 +20,7 @@
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 45px;
+        text-decoration: none;
     }
     &__content{
         flex: 1 0 430px;
@@ -51,7 +52,10 @@
     }
     &__figure{
         flex: 1;
+        margin: 0;
+        padding: 0;
         img{
+            width: 100%;
             height: 100%;
             display: block;
             object-fit: cover;
